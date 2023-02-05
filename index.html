@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Paweł Kowalczyk"/>
+        <meta name="keywords" content="tabele, tabelki, tablice, zestawienia"/>
+        <meta name="description" content="Tabele"/>
+        <meta name="robots" content="all"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabele</title>
+    </head>
+    <body style="background-color: rgb(255, 244, 160);">
+        <style>
+            #container{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                height: fit-content;
+                width: 70%;
+                background-color: rgb(255, 255, 224);
+                padding: 0.5em;
+                border-radius: 1em;
+            }
+
+            div{
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            tr, td{
+                margin: 0em;
+                padding: 1.5em;
+                border-style: solid;
+                border-color: black;
+                border: 0px solid black;
+                background-color: white;
+            }
+
+            table{
+                background-color: black;
+                border-style: solid;
+                border-color: black;
+                border: 1px solid black;
+                text-align: center;
+                padding: 0em;
+            }
+
+            th{
+                margin: 0em;
+                padding: 1.5em;
+                border-style: solid;
+                border-color: black;
+                border: 0px solid black;
+                background-color: rgb(190, 230, 244);
+            }
+        </style>
+        <div id="container">
+            <div id="logo" style="margin-bottom: 1.5em; margin-top: 1.5em; width: 80%; border-radius: 1em; border-style: solid; border-color: rgb(255, 244, 160); background-color: rgb(255, 255, 255);">
+                <p style="text-align: center; font-size: 2.5em; text-decoration: underline; background-color: rgb(255, 255, 255);">Tabele</p>
+            </div>
+            <div id="tabela1" style="height: fit-content; width: fit-content; margin-bottom: 1.5em; margin-top: 1.5em;">
+                <table>
+                    <tr>
+                        <th>1</th>  <th>2</th>  <th>3</th>  <th>4</th> <th>5</th>  <th>6</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>  <td>a</td> <td style="background-color: rgb(234, 242, 223);">b</td> <td style="background-color: rgb(234, 242, 223);">c</td> <td>d</td>  <td>e</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>  <td>f</td>  <td>g</td>  <td>h</td>  <td>i</td> <td style="background-color: rgb(214, 227, 193);">j</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>  <td>k</td>  <td>l</td>  <td>m</td>  <td>n</td> <td style="background-color: rgb(214, 227, 193);">o</td>
+                    </tr>
+                    <tr>
+                        <th>5</th> <td style="background-color: rgb(193, 213, 161);">p</td> <td style="background-color: rgb(193, 213, 161);">q</td> <td style="background-color: rgb(193, 213, 161);">r</td> <td>s</td>  <td>t</td>
+                    </tr>
+                    <tr>
+                        <th>6</th> <td style="background-color: rgb(193, 213, 161);">u</td> <td style="background-color: rgb(193, 213, 161);">v</td> <td style="background-color: rgb(193, 213, 161);">w</td>  <td>y</td>  <td>z</td>
+                    </tr>
+                </table>
+                <figcaption style="text-align: center;">
+                    Tabela 1
+                </figcaption>
+            </div>
+            <hr />
+            <div id="tabela2" style="height: fit-content; width: fit-content; margin-bottom: 1.5em; margin-top: 1.5em;">
+                <table>
+                    <tr>
+                        <th>1</th>  <th>2</th>  <th>3</th>  <th>4</th> <th>5</th>  <th>6</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>  <td>a</td> <td colspan="2" style="background-color: rgb(234, 242, 223);">b, c</td> <td>d</td>  <td>e</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>  <td>f</td>  <td>g</td>  <td>h</td>  <td>i</td> <td rowspan="2" style="background-color: rgb(214, 227, 193);">j,  o</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>  <td>k</td>  <td>l</td>  <td>m</td>  <td>n</td>
+                    </tr>
+                    <tr>
+                        <th>5</th> <td colspan="3" rowspan="2" style="background-color: rgb(193, 213, 161);">p,  q, r, u, v, w</td>  <td>s</td>  <td>t</td> 
+                    </tr>
+                    <tr>
+                        <th>6</th>  <td>y</td>  <td>z</td>
+                    </tr>
+                </table>
+                <figcaption style="text-align: center;">
+                    Tabela 2
+                </figcaption>
+            </div>
+            <hr />
+            <div id="tabela3" style="height: fit-content; width: fit-content; margin-bottom: 1.5em; margin-top: 1.5em;">
+                <table>
+                    <tr>
+                        <th>1</th>  <th>2</th>  <th>3</th>  <th>4</th> <th>5</th>  <th>6</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>  <td>a</td> <td>b</td> <td>c</td> <td>d</td>  <td>e</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>  <td>f</td>  <td>g</td>  <td>h</td>  <td>i</td> <td>j</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>  <td rowspan="2" style="background-color: rgb(193, 213, 161);">k, p</td>  <td>l</td>  <td>m</td>  <td>n</td> <td>o</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>  <td>q</td> <td>r</td> <td>s</td>  <td>t</td>
+                    </tr>
+                    <tr>
+                        <th>6</th> <td>u</td> <td>v</td> <td>w</td>  <td>y</td>  <td>z</td>
+                    </tr>
+                </table>
+                <figcaption style="text-align: center;">
+                    Tabela 3
+                </figcaption>
+            </div>
+            <div id="footer" style="text-align: center; margin-top: 1.5em; margin-bottom: 1.5em; width: 90%; background-color: rgb(255, 195, 99); padding: 0.4em; border-radius: 0.5em;">
+                Paweł Kowalczyk 2023
+            </div>
+        </div>
+    </body>
+</html>
